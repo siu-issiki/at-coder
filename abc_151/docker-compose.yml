@@ -1,0 +1,9 @@
+version: '2.1'
+services:
+  python:
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+    working_dir: /var/app
+    volumes:
+      - ./:/var/app
